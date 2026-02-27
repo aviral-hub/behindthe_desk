@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bites Behind The Desk | Chembur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lexend:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --wood-brown: #8B4513;
+            --mustard: #FFC107;
+            --teal: #26C6DA;
+            --white-paper: #F9F9F9;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Lexend', sans-serif;
+            background: #fff;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('your-logo-bg.jpg'); /* Use your logo image here */
+            background-size: cover;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            border-bottom: 10px solid var(--mustard);
+        }
+
+        .hero h1 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 5rem;
+            color: var(--mustard);
+            text-shadow: 4px 4px var(--wood-brown);
+            margin: 0;
+        }
+
+        .hero p { font-size: 1.5rem; font-weight: bold; margin-top: 10px; }
+
+        /* Menu Section */
+        .section { padding: 80px 20px; text-align: center; }
+        .wood-panel {
+            background: #f2e3c9; /* Light wood color */
+            border: 8px solid var(--wood-brown);
+            border-radius: 20px;
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px;
+            position: relative;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .menu-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            border-bottom: 5px solid var(--teal);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .price-tag {
+            background: var(--mustard);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: 900;
+        }
+
+        /* Social Wall Section */
+        .social-wall {
+            background: #222;
+            color: white;
+            padding: 60px 20px;
+        }
+
+        .social-header { color: var(--teal); font-family: 'Fredoka One'; font-size: 2.5rem; margin-bottom: 30px; }
+
+        .reels-container {
+            width: 100%;
+            min-height: 500px;
+            background: #333;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed var(--teal);
+        }
+
+        /* Footer / Visit Section */
+        .visit-us { background: var(--mustard); padding: 50px 20px; font-weight: bold; }
+        .insta-btn {
+            background: #E1306C;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+<section class="hero-section">
+    <div class="bg-bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <div class="hero-container">
+        <div class="hero-image-wrapper">
+            <img src="https://use.ai/_next/image?url=https%3A%2F%2Ffiles.use.ai%2Ffiles%2Fchat%2Ffiles%2Ff6dcffb7-9707-4ce4-bc85-32ff66f0ec8f-image.png&w=1024&q=75" 
+                 alt="Bites Behind The Desk Team" 
+                 class="hero-logo-img">
+        </div>
+
+        <div class="hero-glass-card">
+            <h1 class="hero-headline">BITES BEHIND THE <span class="highlight">DESK</span></h1>
+            <p class="hero-subheadline">From desk to delicious.</p>
+            
+            <div class="hero-cta-group">
+                <a href="#menu" class="btn btn-menu">
+                    <span class="icon">🍔</span> View Menu
+                </a>
+                <a href="https://maps.app.goo.gl/NW1825yP6WFriPeh9r" target="_blank" class="btn btn-maps">
+                    <span class="icon">📍</span> Find Us on Maps
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="menu" class="menu-section">
+    <div class="container">
+        <h2 class="menu-main-title">THE FEED</h2>
+        
+        <div class="grid-layout">
+            <div class="menu-card cheap-thrills">
+                <div class="card-badge">BUDGET BITES</div>
+                <h3 class="category-title">Cheap Thrills</h3>
+                
+                <div class="menu-item">
+                    <div class="item-info">
+                        <span class="item-name">Lazy Lays</span>
+                        <span class="item-desc">Lays, fresh veg, tangy masala, dramatic sauces.</span>
+                    </div>
+                    <div class="item-price">₹60</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <span class="item-name">Crazy Kurkure</span>
+                        <span class="item-desc">Kurkure, fresh veg, tangy masala, dramatic sauces.</span>
+                    </div>
+                    <div class="item-price">₹50</div>
+                </div>
+            </div>
+
+            <div class="menu-card premium-munchies">
+                <div class="card-badge">PREMIUM UPGRADE</div>
+                <h3 class="category-title">Premium Munchies</h3>
+                
+                <div class="menu-item">
+                    <div class="item-info">
+                        <span class="item-name">Lays Laziz</span>
+                        <span class="item-desc">Potato corn, fresh veg, masala, liquid cheese dip.</span>
+                    </div>
+                    <div class="item-price">₹70</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-info">
+                        <span class="item-name">Jungle Kurkure</span>
+                        <span class="item-desc">Kurkure, loaded veg, spicy sauces, cheese attack.</span>
+                    </div>
+                    <div class="item-price">₹70</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="showstopper-card">
+            <div class="volcano-content">
+                <div class="volcano-text">
+                    <h3 class="volcano-title">THE CHEESE VOLCANO 🌋</h3>
+                    <p class="volcano-desc">Lay's + Kurkure + Loaded Veg + Liquid Cheese + Extra Grated Cheese.</p>
+                    <div class="volcano-price">ONLY ₹100</div>
+                </div>
+                <div class="cheese-drip-container">
+                    <div class="drip drip-1"></div>
+                    <div class="drip drip-2"></div>
+                    <div class="drip drip-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .menu-section {
+        padding: 100px 20px;
+        background-color: #fcfcfc;
+        font-family: 'Lexend', sans-serif;
+    }
+
+    .container { max-width: 1100px; margin: auto; }
+
+    .menu-main-title {
+        font-family: 'Fredoka One', cursive;
+        font-size: 3rem;
+        text-align: center;
+        color: var(--brand-wood);
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+
+    .grid-layout {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .menu-card {
+        padding: 40px;
+        border-radius: 25px;
+        position: relative;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-card:hover { transform: translateY(-10px); }
+
+    .card-badge {
+        position: absolute;
+        top: -15px;
+        left: 30px;
+        background: var(--brand-wood);
+        color: white;
+        padding: 5px 15px;
+        border-radius: 50px;
+        font-size: 0.7rem;
+        font-weight: 900;
+        letter-spacing: 1px;
+    }
+
+    .cheap-thrills { background-color: var(--brand-yellow); border: 4px solid var(--brand-wood); }
+    .premium-munchies { background-color: var(--brand-teal); border: 4px solid var(--brand-wood); color: white; }
+
+    .category-title {
+        font-family: 'Fredoka One', cursive;
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    .menu-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .premium-munchies .menu-item { border-bottom-color: rgba(255,255,255,0.2); }
+
+    .item-name { font-weight: 900; font-size: 1.2rem; display: block; }
+    .item-desc { font-size: 0.85rem; opacity: 0.8; display: block; max-width: 250px; }
+    .item-price { font-weight: 900; font-size: 1.4rem; }
+
+    /* Showstopper Card */
+    .showstopper-card {
+        background: linear-gradient(45deg, #FF9800, #F44336);
+        border-radius: 30px;
+        padding: 50px;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        margin-top: 50px;
+        border: 4px solid var(--brand-wood);
+    }
+
+    .volcano-title { font-family: 'Fredoka One', cursive; font-size: 2.5rem; margin-bottom: 10px; }
+    .volcano-desc { font-size: 1.1rem; margin-bottom: 20px; font-weight: 500; }
+    .volcano-price { font-weight: 900; font-size: 2rem; background: var(--brand-yellow); display: inline-block; color: var(--brand-wood); padding: 5px 20px; border-radius: 10px; }
+
+    /* Melting Cheese Animation */
+    .cheese-drip-container {
+        position: absolute;
+        top: 0;
+        right: 10%;
+        display: flex;
+        gap: 15px;
+    }
+
+    .drip {
+        width: 25px;
+        height: 80px;
+        background: var(--brand-yellow);
+        border-radius: 0 0 20px 20px;
+        animation: drip-flow 3s infinite ease-in-out;
+    }
+
+    .drip-2 { height: 120px; animation-delay: 0.5s; }
+    .drip-3 { height: 60px; animation-delay: 1.2s; }
+
+    @keyframes drip-flow {
+        0%, 100% { transform: translateY(-20px); }
+        50% { transform: translateY(20px); }
+    }
+
+    @media (max-width: 768px) {
+        .grid-layout { grid-template-columns: 1fr; }
+        .showstopper-card { padding: 30px; text-align: center; }
+        .cheese-drip-container { display: none; }
+    }
+</style>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lexend:wght@400;700;900&display=swap');
+
+    :root {
+        --brand-yellow: #FFC107;
+        --brand-teal: #26C6DA;
+        --brand-wood: #4E2C0F;
+        --white: #ffffff;
+    }
+
+    .hero-section {
+        position: relative;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px;
+        overflow: hidden;
+    }
+
+    /* Floating Animation for the Logo */
+    @keyframes float {
+        0% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-20px) rotate(1deg); }
+        100% { transform: translateY(0px) rotate(0deg); }
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10;
+        max-width: 1100px;
+        width: 100%;
+    }
+
+    .hero-image-wrapper {
+        animation: float 5s ease-in-out infinite;
+        filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1));
+        margin-bottom: -40px; /* Overlap with card */
+        z-index: 11;
+    }
+
+    .hero-logo-img {
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+    }
+
+    /* Glassmorphism Card */
+    .hero-glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 60px 40px 40px;
+        border-radius: 30px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .hero-headline {
+        font-family: 'Fredoka One', cursive;
+        font-size: clamp(2rem, 6vw, 4.5rem);
+        color: var(--brand-wood);
+        margin: 0;
+        line-height: 1.1;
+    }
+
+    .highlight {
+        color: var(--brand-teal);
+        position: relative;
+    }
+
+    .hero-subheadline {
+        font-family: 'Lexend', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #666;
+        margin: 15px 0 35px;
+        letter-spacing: 1px;
+    }
+
+    /* Buttons */
+    .hero-cta-group {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 16px 32px;
+        font-family: 'Lexend', sans-serif;
+        font-weight: 900;
+        text-decoration: none;
+        border-radius: 15px;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.1rem;
+    }
+
+    .btn-menu {
+        background: var(--brand-yellow);
+        color: var(--brand-wood);
+        border: 2px solid var(--brand-yellow);
+    }
+
+    .btn-maps {
+        background: white;
+        color: var(--brand-teal);
+        border: 2px solid var(--brand-teal);
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Background Bubbles */
+    .bg-bubbles {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        z-index: 1;
+    }
+
+    .bubble {
+        position: absolute;
+        background: var(--brand-yellow);
+        opacity: 0.1;
+        border-radius: 50%;
+    }
+
+    .bubble:nth-child(1) { width: 300px; height: 300px; top: -100px; left: -100px; }
+    .bubble:nth-child(2) { width: 200px; height: 200px; bottom: -50px; right: -50px; background: var(--brand-teal); }
+    .bubble:nth-child(3) { width: 100px; height: 100px; top: 20%; right: 10%; }
+
+    @media (max-width: 768px) {
+        .hero-glass-card { padding: 50px 20px 30px; }
+        .hero-image-wrapper { margin-bottom: -30px; }
+        .hero-logo-img { max-width: 350px; }
+    }
+</style>
+<section id="location" class="location-section">
+    <div class="location-container">
+        <div class="location-info">
+            <h2 class="location-headline">MEET US <span class="yellow-text">AFTER OFFICE</span></h2>
+            <p class="location-subheadline">Your evening escape in the heart of Chembur.</p>
+            
+            <div class="address-card">
+                <div class="address-item">
+                    <span class="icon">📍</span>
+                    <p>Opposite Cubic Mall, Vadavli Road,<br>Chembur East, Mumbai - 400074</p>
+                </div>
+                <div class="address-item">
+                    <span class="icon">⏰</span>
+                    <p>Open Daily: 5:00 PM - 11:00 PM</p>
+                </div>
+            </div>
+
+            <div class="contact-actions">
+                <a href="tel:+918850942308" class="btn-call">
+                    <span class="btn-icon">📞</span>
+                    <div class="btn-text">
+                        <small>Quick Order / Inquiries</small>
+                        <strong>Call Akash</strong>
+                    </div>
+                </a>
+                <a href="https://wa.me/8850942308?text=Hey%20Akash!%20I'm%20coming%20over%20for%20some%20snacks." class="btn-wa">
+                    <span class="btn-icon">💬</span>
+                    <span>WhatsApp Us</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="map-frame">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2123456789!2d72.8950!3d19.0450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8ad!2sCubic%20Mall!5e0!3m2!1sen!2sin!4v1234567890" 
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="map-overlay">
+                <a href="https://maps.app.goo.gl/NW1825yP6WFriPeh9" target="_blank" class="map-btn">Get Directions</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .location-section {
+        background-color: #1a1a1a;
+        padding: 100px 20px;
+        color: #ffffff;
+        font-family: 'Lexend', sans-serif;
+    }
+
+    .location-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .location-headline {
+        font-family: 'Fredoka One', cursive;
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .yellow-text { color: #FFC107; }
+
+    .location-subheadline {
+        font-size: 1.2rem;
+        color: #26C6DA;
+        margin-bottom: 30px;
+    }
+
+    .address-card {
+        background: rgba(255,255,255,0.05);
+        padding: 30px;
+        border-radius: 20px;
+        border-left: 5px solid #FFC107;
+        margin-bottom: 40px;
+    }
+
+    .address-item {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .address-item:last-child { margin-bottom: 0; }
+
+    .address-item .icon { font-size: 1.5rem; }
+
+    .address-item p {
+        margin: 0;
+        line-height: 1.6;
+        font-size: 1.1rem;
+    }
+
+    /* Contact Buttons */
+    .contact-actions {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .btn-call, .btn-wa {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 25px;
+        border-radius: 15px;
+        transition: 0.3s transform;
+    }
+
+    .btn-call { background: #FFC107; color: #000; }
+    .btn-wa { background: #25D366; color: #fff; }
+
+    .btn-call:hover, .btn-wa:hover { transform: translateY(-5px); }
+
+    .btn-text { display: flex; flex-direction: column; }
+    .btn-text small { font-size: 0.7rem; text-transform: uppercase; font-weight: 700; }
+
+    /* Map Styling */
+    .map-frame {
+        position: relative;
+        border-radius: 30px;
+        overflow: hidden;
+        border: 2px solid rgba(255,255,255,0.1);
+        box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    }
+
+    .map-overlay {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .map-btn {
+        background: #26C6DA;
+        color: #fff;
+        text-decoration: none;
+        padding: 12px 30px;
+        border-radius: 50px;
+        font-weight: 700;
+        box-shadow: 0 10px 20px rgba(38, 198, 218, 0.4);
+    }
+
+    /* Responsive */
+    @media (max-width: 968px) {
+        .location-container { grid-template-columns: 1fr; }
+        .location-info { text-align: center; order: 2; }
+        .address-item { justify-content: center; }
+        .contact-actions { justify-content: center; }
+        .location-headline { font-size: 2.2rem; }
+    }
+</style>
+
+<section id="trust" class="trust-section">
+    <div class="trust-container">
+        <div class="promise-box">
+            <h2 class="trust-headline">WHY <span class="teal-text">CHOOSE US?</span></h2>
+            <p class="promise-quote">"Trust us, we will make it easy for you."</p>
+        </div>
+
+        <div class="hooks-grid">
+            <div class="hook-card">
+                <div class="hook-icon">⚡</div>
+                <h3>Quick Service</h3>
+                <p>Because you're on a break, and every minute of freedom counts.</p>
+            </div>
+
+            <div class="hook-card">
+                <div class="hook-icon">🧼</div>
+                <h3>Hygiene First</h3>
+                <p>Maintaining the corporate standard you expect. Clean, safe, and professional.</p>
+            </div>
+
+            <div class="hook-card">
+                <div class="hook-icon">🔥</div>
+                <h3>Bold Flavors</h3>
+                <p>Hand-crafted spices designed to wake up your taste buds after a long meeting.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .trust-section {
+        background-color: #121212;
+        padding: 80px 20px;
+        font-family: 'Lexend', sans-serif;
+        text-align: center;
+    }
+
+    .trust-container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .trust-headline {
+        font-family: 'Fredoka One', cursive;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .promise-quote {
+        font-size: 1.3rem;
+        color: #FFC107; /* Brand Yellow */
+        font-style: italic;
+        margin-bottom: 50px;
+        font-weight: 300;
+    }
+
+    .hooks-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+
+    .hook-card {
+        background: #1a1a1a;
+        padding: 40px 30px;
+        border-radius: 25px;
+        border: 1px solid rgba(255,255,255,0.05);
+        transition: all 0.3s ease;
+    }
+
+    .hook-card:hover {
+        transform: translateY(-10px);
+        border-color: #26C6DA; /* Brand Teal */
+        box-shadow: 0 15px 30px rgba(38, 198, 218, 0.1);
+    }
+
+    .hook-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .hook-card h3 {
+        color: #26C6DA;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        font-family: 'Fredoka One', cursive;
+    }
+
+    .hook-card p {
+        color: #ccc;
+        line-height: 1.6;
+        font-size: 1rem;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+        .trust-headline { font-size: 2rem; }
+        .hook-card { padding: 30px 20px; }
+    }
+</style>
+<section id="social-wall" class="social-section">
+    <div class="social-container">
+        <div class="social-intro">
+            <h2 class="social-headline">CRUNCH ON <span class="teal-text">CAMERA</span></h2>
+            <p class="social-caption">"Crunch louder than your office gossip!"</p>
+        </div>
+
+        <div class="reels-display-frame">
+            <div class="live-indicator">
+                <span class="dot"></span> LIVE FROM CHEMBUR
+            </div>
+            
+            <div class="instagram-wrapper">
+                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DVOfXhkgGeY/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:12px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                    </blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+                </div>
+        </div>
+
+        <div class="social-footer">
+            <p>Tag <span class="brand-link">@behindthe_desk</span> to get featured!</p>
+            <div class="hashtag-row">
+                <span>#BitesBehindTheDesk</span>
+                <span>#ChemburFoodies</span>
+                <span>#CrunchMode</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .social-section {
+        background-color: #0f0f0f; /* Deep dark background */
+        padding: 80px 20px;
+        font-family: 'Lexend', sans-serif;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .social-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .social-headline {
+        font-family: 'Fredoka One', cursive;
+        font-size: clamp(2.2rem, 5vw, 3.5rem);
+        margin-bottom: 5px;
+        letter-spacing: 1px;
+    }
+
+    .teal-text { color: #26C6DA; }
+
+    .social-caption {
+        font-size: 1.2rem;
+        color: #FFC107; /* Brand Yellow */
+        font-style: italic;
+        margin-bottom: 40px;
+    }
+
+    /* Cinematic Frame for the Reel */
+    .reels-display-frame {
+        background: #1a1a1a;
+        padding: 50px 20px 20px;
+        border-radius: 30px;
+        border: 1px solid rgba(38, 198, 218, 0.2);
+        position: relative;
+        box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+    }
+
+    .live-indicator {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #ff4d4d;
+    }
+
+    .live-indicator .dot {
+        width: 8px;
+        height: 8px;
+        background: #ff4d4d;
+        border-radius: 50%;
+        animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+    }
+
+    .instagram-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .social-footer {
+        margin-top: 40px;
+    }
+
+    .brand-link {
+        color: #26C6DA;
+        font-weight: 700;
+    }
+
+    .hashtag-row {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+        flex-wrap: wrap;
+    }
+
+    .hashtag-row span {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 6px 15px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        color: #888;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 600px) {
+        .reels-display-frame {
+            padding: 40px 10px 10px;
+            border-radius: 20px;
+        }
+    }
+</style>
+</body>
+</html>
